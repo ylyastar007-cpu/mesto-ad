@@ -8,3 +8,12 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
+
+.popup__input_type_error {
+  border: 1px solid red;
+}
+
+.popup__input_type_error:focus {
+  border: 1px solid red;
+  outline: none;
+}
