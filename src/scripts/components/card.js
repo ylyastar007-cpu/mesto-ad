@@ -19,6 +19,7 @@ export const createCardElement = (
 ) => {
   const cardElement = getTemplate();
   const likeButton = cardElement.querySelector(".card__like-button");
+  const likeCountElement = cardElement.querySelector(".card__like-count");
   const deleteButton = cardElement.querySelector(".card__control-button_type_delete");
   const cardImage = cardElement.querySelector(".card__image");
 
@@ -27,7 +28,7 @@ export const createCardElement = (
   cardElement.querySelector(".card__title").textContent = data.name;
 
   if (onLikeIcon) {
-    likeButton.addEventListener("click", () => onLikeIcon(likeButton));
+    likeButton.addEventListener("click", () => onLikeIcon(likeButton, likeCountElement));
   }
 
   if (onDeleteCard) {
