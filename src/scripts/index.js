@@ -288,5 +288,6 @@ allPopup.forEach((popup) => {
     });
   })
   .catch((err) => {
-    console.log(err); // В случае возникновения ошибки выводим её в консоль
+    console.log(err);
   });
+  
